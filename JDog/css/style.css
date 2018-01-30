@@ -1,0 +1,93 @@
+.jdBox{
+	width: 100%;
+}
+.header{
+    height: 40px;
+    width: 100%;
+    background: rgba(255,27,1,0);
+    position: fixed;
+    top: 0;
+    z-index: 999999999;
+    padding: 0 60px 0 60px;
+}
+.search{
+	width: 100%;
+    height: 30px;
+    margin-top: 5px;
+    border-radius: 20px;
+    padding-left: 24px;
+}
+.glass{
+	width: 20px;
+	height: 20px;
+	display: block;
+	background: url(../img/sprites.png)no-repeat -60px -109px;
+	background-size: 200px 200px;
+	position: absolute;
+	left: 67px;
+	top: 10px;
+}
+.header-logo,
+.header-login{
+	width: 60px;
+	height: 36px;
+	display: block;
+	position: absolute;
+	top: 2px;
+}
+.header-logo{
+	left: 0;
+	background: url(../img/sprites.png)no-repeat 0 -102px;
+	background-size: 200px 200px;
+}
+.header-login{
+	right: 0;
+	background-position: 0px 0px;
+	color: white;
+	line-height: 36px;
+	text-align: center;
+}
+.banner{
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	top:0;
+}
+.banner .ulu{
+	/*宽度为li的个数X100+'%'*/
+	width: 400%;
+	/*margin-left: -100%;*/
+	/*此处不可以用all*/
+	/*transition: all 3s;*/
+	/*transition: margin-left 0.3s linear;*/
+	position: relative;
+}
+.banner li{
+	/*width为100/li的个数+'%'*/
+	width: 25%;
+	float: left;
+}
+.banner li img{
+	width: 100%;
+}
+.number{
+	position: absolute;
+	left: 50%;
+	bottom:10px;
+	margin-left: -48px;
+}
+.number .circle{
+	width: 6px;
+	height: 6px;
+	border: 1px solid white;
+	border-radius: 50%;
+	margin: 0 3px;
+}
+.number .black{
+	width: 6px;
+	height: 6px;
+	border: 1px solid white;
+	border-radius: 50%;
+	margin: 0 3px;
+	background: black;
+}

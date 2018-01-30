@@ -1,0 +1,43 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-tap-highlight-color: transparent;
+	font-size: 14px;
+	box-sizing: border-box;
+    font-family: "微软雅黑", sans-serif;
+}
+li{
+	list-style: none;
+}
+input{
+	-webkit-appearance: none;
+}
+a{
+	text-decoration: none;
+}
+.fl_l{
+	float: left;
+}
+.clearfix::before,
+.clearfix::after,{
+	content: "";
+	display: block;
+	visibility: hidden;
+	height: 0;
+	clear: both;
+}
+.nav{
+	width: 100%;
+	text-align: center;
+}
+.nav ul li{
+	width: 25%;
+	float: left;
+	padding: 5px 0;
+}
+.nav ul li img{
+	width: 50%;
+}
+a{
+	color: gray;
+}
