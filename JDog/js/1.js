@@ -36,4 +36,52 @@ onload=function(){
 			oNum[0].className="circle fl_l black"
 		}
 	},1000)
+	//倒计时
+	var oT=document.querySelector('.handKill').querySelectorAll('li');
+//	console.log(typeof(oT[0].innerHTML))
+//--
+	var seconds=parseInt(oT[oT.length-1].innerHTML)
+	var second=parseInt(oT[oT.length-2].innerHTML)
+	var minutes=parseInt(oT[oT.length-4].innerHTML)
+	var minute=parseInt(oT[oT.length-5].innerHTML)
+	var hours=parseInt(oT[oT.length-7].innerHTML)
+	var hour=parseInt(oT[oT.length-8].innerHTML)
+	
+	var Timee=setInterval(function(){
+		seconds--;
+		if(seconds<0){
+			seconds=9;
+			second--;
+			oT[oT.length-2].innerHTML=second;
+			if(second<0){
+				second=5;
+				oT[oT.length-2].innerHTML=second;
+				minutes--;
+				if(minutes<0){
+					minutes=9
+					minute--;
+					oT[oT.length-5].innerHTML=minute;
+					if(minute<0){
+						minute=5;
+						oT[oT.length-5].innerHTML=minute;
+						hours--;
+						oT[oT.length-7].innerHTML=hours;
+						if(hours<0){
+							hours=9;
+							hour--;
+							if(hour<0){
+								alert('折扣优惠活动结束，你买不到了哦~')
+							}
+							oT[oT.length-8].innerHTML=hour;
+						}
+						oT[oT.length-7].innerHTML=hours;
+					}
+				}
+				oT[oT.length-4].innerHTML=minutes;
+			};
+		}
+		oT[oT.length-1].innerHTML=seconds;
+	},1000)
+	
+	
 }

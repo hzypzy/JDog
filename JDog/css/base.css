@@ -18,26 +18,14 @@ a{
 .fl_l{
 	float: left;
 }
+.fl_r{
+	float: right;
+}
 .clearfix::before,
-.clearfix::after,{
+.clearfix::after{
 	content: "";
 	display: block;
 	visibility: hidden;
 	height: 0;
 	clear: both;
-}
-.nav{
-	width: 100%;
-	text-align: center;
-}
-.nav ul li{
-	width: 25%;
-	float: left;
-	padding: 5px 0;
-}
-.nav ul li img{
-	width: 50%;
-}
-a{
-	color: gray;
 }
